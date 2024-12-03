@@ -24,7 +24,7 @@ months=0
 current_savings= 0
 r=.04
 
-# when current savings is less than required down payment, execute the additions onto current savings and months. For every 6 months, add the semi annual raise to salary. Looped until Current savings meets portion needed, then print number of months of savings needed to meet downpayment requirement.
+# while current savings is less than required down payment, execute the additions onto current savings and months. For every 6 months, add the semi annual raise to salary. Looped until Current savings meets portion needed, then print number of months of savings needed to meet downpayment requirement.
 while current_savings<portion_down_payment:
     current_savings += current_savings*r/12
     current_savings += portion_saved*(annual_salary/12)
